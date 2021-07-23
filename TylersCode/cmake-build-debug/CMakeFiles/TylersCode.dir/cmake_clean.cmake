@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/TylersCode.dir/main.cpp.o"
+  "CMakeFiles/TylersCode.dir/main.cpp.obj"
   "TylersCode.exe"
+  "TylersCode.exe.manifest"
   "TylersCode.pdb"
   "libTylersCode.dll.a"
 )
