@@ -5,15 +5,16 @@
 #include <math.h>
 #include <vector>
 #include <map>
+#include <queue>
 using namespace std;
 struct Star{
     string name = ""; //name determined from naming convention
     string id; //id from database
     float dist; //dist from earth (need to get units)
     float x, y, z; //cartesian coordinates
-    float Vx, Vy, Vz;
+    float Vx, Vy, Vz; //velocities
     //vector of conected stars with distance
-    vector<pair<Star*,int>> neighbors;
+    vector<pair<Star*,float>> neighbors;
 
     //initializes with name
     Star(string name, int id, float x, float y, float z, float Vx, float Vy, float Vz){
@@ -46,7 +47,7 @@ private:
     map<string, Star*> chart; //map of stars, key is the star ID,
 public:
     void addEdge(Star* star);
-    vector<Star> BellmanFord(graph map, string srcID, string destination);
+    vector<Star*> Dijkstra(string srcID, string destination);
     vector<Star> BFS();
 };
 
