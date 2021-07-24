@@ -3,4 +3,4 @@ project(TylersCode)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(TylersCode main.cpp Graph.h)
+add_executable(TylersCode main.cpp Graph.h Graph.cpp)

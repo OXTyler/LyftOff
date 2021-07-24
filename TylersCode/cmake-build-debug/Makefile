@@ -141,6 +141,33 @@ TylersCode/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TylersCode.dir\build.make CMakeFiles/TylersCode.dir/build
 .PHONY : TylersCode/fast
 
+Graph.obj: Graph.cpp.obj
+
+.PHONY : Graph.obj
+
+# target to build an object file
+Graph.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TylersCode.dir\build.make CMakeFiles/TylersCode.dir/Graph.cpp.obj
+.PHONY : Graph.cpp.obj
+
+Graph.i: Graph.cpp.i
+
+.PHONY : Graph.i
+
+# target to preprocess a source file
+Graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TylersCode.dir\build.make CMakeFiles/TylersCode.dir/Graph.cpp.i
+.PHONY : Graph.cpp.i
+
+Graph.s: Graph.cpp.s
+
+.PHONY : Graph.s
+
+# target to generate assembly for a file
+Graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TylersCode.dir\build.make CMakeFiles/TylersCode.dir/Graph.cpp.s
+.PHONY : Graph.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -177,6 +204,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... TylersCode
+	@echo ... Graph.obj
+	@echo ... Graph.i
+	@echo ... Graph.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
