@@ -131,10 +131,9 @@ int main() {
     graph starGraph;
     auto start = high_resolution_clock::now();
     getDataFromCSV(filePath, starGraph);
-    auto stop = high_resolution_clock::now();
- /*   int dist = 0;
+    int dist = 0;
 
-   vector<Star*> path = starGraph.Dijkstra("0", "5", dist);
+    vector<Star*> path = starGraph.Dijkstra("0", "5", dist);
 
     for(int i = 0; i < path.size(); i++){
         cout << "Star ID: "<< path[i]->id << endl;
@@ -143,9 +142,9 @@ int main() {
     cout <<"\n\n" << endl;
 
 
-
-    */
+    auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
     cout << "time: " << duration.count() << "microseconds"<< endl;
+
     return 0;
 }
