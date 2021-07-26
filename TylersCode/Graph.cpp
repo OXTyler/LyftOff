@@ -60,12 +60,12 @@ string graph::addEdgeRecursive(Star* star, Star* next){
     return nearestID;
 }
 
-vector<Star*> graph::Dijkstra(string srcID, string destinationID, int& distance){
+vector<Star*> graph::Dijkstra(string srcID, string destinationID, float& distance){
 
     //priority queue of nodes (stars)
     priority_queue<pair<float,string>, vector<pair<float,string>>, greater<pair<float,string>>> pq;
     //vector of distances all set to INT_MAX (basically infinity)
-    vector<float>dist(chart.size(),INT_MAX);
+    vector<float>dist(chart.size()+2,INT_MAX);
     vector<string>parents(chart.size(), "");
     pq.push(make_pair(0, srcID));
     dist[stoi(srcID)] = 0;
@@ -86,8 +86,10 @@ vector<Star*> graph::Dijkstra(string srcID, string destinationID, int& distance)
         }
 
     }
+
     vector<Star*> path;
     path.push_back(chart[destinationID]);
+
     string tempID = parents[stoi(destinationID)];
     distance = dist[stoi(destinationID)];
     Star* tempStar = chart[tempID];
@@ -95,7 +97,6 @@ vector<Star*> graph::Dijkstra(string srcID, string destinationID, int& distance)
     while(parents[stoi(tempID)] != ""){
         path.push_back(tempStar);
         tempID = parents[stoi(tempID)];
-
         tempStar = chart[tempID];
     }
     path.push_back(tempStar);
