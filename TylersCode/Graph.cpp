@@ -5,7 +5,7 @@
 using namespace std;
 
 void graph::chartInfo() {
-    cout <<chart.size() << endl;
+    cout <<chart.size()+2 << endl;
     for(auto iter = chart.begin(); iter != chart.end(); iter++){
         iter->second->printStar();
     }
@@ -66,7 +66,7 @@ vector<Star*> graph::Dijkstra(string srcID, string destinationID, float& distanc
     priority_queue<pair<float,string>, vector<pair<float,string>>, greater<pair<float,string>>> pq;
     //vector of distances all set to INT_MAX (basically infinity)
     vector<float>dist(chart.size()+2,INT_MAX);
-    vector<string>parents(chart.size(), "");
+    vector<string>parents(chart.size()+2, "");
     pq.push(make_pair(0, srcID));
     dist[stoi(srcID)] = 0;
 
