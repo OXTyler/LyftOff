@@ -1,7 +1,6 @@
 #include <iostream>
 #include "Graph.h"
 #include <fstream>
-#include <iomanip>
 #include <string>
 #include <sstream>
 
@@ -131,9 +130,9 @@ int main() {
     graph starGraph;
     auto start = high_resolution_clock::now();
     getDataFromCSV(filePath, starGraph);
-    int dist = 0;
+    float dist = 0;
 
-    vector<Star*> path = starGraph.Dijkstra("0", "5", dist);
+    vector<Star*> path = starGraph.Dijkstra("0", "119615", dist);
 
     for(int i = 0; i < path.size(); i++){
         cout << "Star ID: "<< path[i]->id << endl;

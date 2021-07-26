@@ -71,7 +71,7 @@ private:
 public:
     void addEdge(Star* star);
     string addEdgeRecursive(Star* star, Star* next);
-    vector<Star*> Dijkstra(string srcID, string destination, int& dist);
+    vector<Star*> Dijkstra(string srcID, string destination, float& dist);
     vector<Star> BFS();
     void chartInfo();
 };
