@@ -62,43 +62,84 @@ string graph::addEdgeRecursive(Star* star, Star* next){
 
 vector<Star*> graph::Dijkstra(string srcID, string destinationID, float& distance){
 
-    //priority queue of nodes (stars)
+    //priority queue of nodes (stars) implemented as a min heap
     priority_queue<pair<float,string>, vector<pair<float,string>>, greater<pair<float,string>>> pq;
+
     //vector of distances all set to INT_MAX (basically infinity)
     vector<float>dist(chart.size()+2,INT_MAX);
+
+    //vector of the previous node, ie value of parents [9] is the node that comes before 9 on the path
     vector<string>parents(chart.size()+2, "");
+
+    //push the starting node into priority queue with distance from itself = 0
     pq.push(make_pair(0, srcID));
+
+    //distance = 0 at src id, used for finding sum of distances later
     dist[stoi(srcID)] = 0;
 
+    //priority queue will be empty when all nodes are visited
     while(!pq.empty()){
+
+        //the node currently being worked on is from top of queue
         pair<int, string> curr = pq.top();
         pq.pop();
+
+        //id of that node
         string u = curr.second;
 
+        //iterates through the neighbors of that node
         for(auto iter = chart[u]->neighbors.begin(); iter != chart[u]->neighbors.end(); iter++){
+            //the star that is the neighbor
             Star* v  = iter->first;
+            //distance from the node being worked on
             float w = iter->second;
+
+            //if current distance(for first pass is INT_MAX) is greater than the distance
+            //to node being worked on, plus the distance from that node to neighbor
             if(dist[stoi(v->id)] > dist[stoi(u)] + w){
+
+                //make distance from source to nieghbor = distance from node being worked on
+                //plus distance to neighbor
                 dist[stoi(v->id)] = dist[stoi(u)] + w;
+
+                //parent of neighbor is the node being worked on
                 parents[stoi(v->id)] = u;
+
+                //push the id of neighbor into priority queue paired with distance from source
                 pq.push(make_pair(dist[stoi(v->id)], v->id));
             }
         }
 
     }
 
+    //path from destinantion to source (its backwards)
     vector<Star*> path;
+
+    //start with destination
     path.push_back(chart[destinationID]);
 
+    //used to iterate through parents to get path
     string tempID = parents[stoi(destinationID)];
+
+    //distance from source to destination, saved by being passed in by reference
     distance = dist[stoi(destinationID)];
+
+    //temp star for iterating, starts at the parent of the destination
     Star* tempStar = chart[tempID];
 
+
+    //because of parent vector being initialized with value "", as long as the value
+    //isnt that, it has a parent
     while(parents[stoi(tempID)] != ""){
+        //push iterating star into path
         path.push_back(tempStar);
+        //set the temp id to the parent id of iterating star
         tempID = parents[stoi(tempID)];
+        //set iterating star as that parent using the graph
         tempStar = chart[tempID];
     }
+
+    //last tempStar will be the source node, pushes back here
     path.push_back(tempStar);
 
     return path;

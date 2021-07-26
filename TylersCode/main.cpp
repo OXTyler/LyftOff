@@ -132,7 +132,7 @@ int main() {
     getDataFromCSV(filePath, starGraph);
     float dist = 0;
 
-    vector<Star*> path = starGraph.Dijkstra("83", "119615", dist);
+    vector<Star*> path = starGraph.Dijkstra("830", "119615", dist);
 
     for(int i = 0; i < path.size(); i++){
         cout << "Star ID: "<< path[i]->id << endl;
