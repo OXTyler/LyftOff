@@ -145,3 +145,33 @@ vector<Star*> graph::Dijkstra(string srcID, string destinationID, float& distanc
     return path;
 
 }
+vector<Star*> graph::BFS(const graph &g, string sourceID) {
+    set<string> identified;
+    vector<Star*> path;
+    identified.insert(sourceID);
+    queue<string> q;
+    q.push(sourceID);
+    while(q.empty() == false){
+        string temp = q.front();
+        Star* tempStar = chart[temp];
+        path.push_back(tempStar);
+        q.pop();
+        vector<pair<Star*,float>> neighbors = chart[temp]->neighbors;
+        sort(stoi(neighbors.begin()->first->id) ,stoi(neighbors.begin()->first->id) + stoi(neighbors.end()->first->id));
+        for(int i : neighbors.begin()->first->id){
+            if(identified.count(to_string(i)) == 0){
+                identified.insert(to_string(i));
+                q.push(to_string(i));
+            }
+
+
+        }
+
+
+
+    }
+
+
+    return path;
+
+}
