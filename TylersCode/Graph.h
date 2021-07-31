@@ -74,5 +74,6 @@ public:
     vector<Star*> Dijkstra(string srcID, string destination, float& dist);
     vector<Star> BFS();
     void chartInfo();
+    vector<Star*> BFS(const graph& g, string sourceID);
 };
 
