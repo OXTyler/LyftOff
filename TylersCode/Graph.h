@@ -5,7 +5,7 @@
 #include <cmath>
 #include <utility>
 #include <vector>
-#include <map>
+#include <unordered_map>
 #include <queue>
 #include <iomanip>
 #include <iostream>
@@ -67,7 +67,7 @@ struct Star{
 
 class graph{
 private:
-    map<string, Star*> chart; //map of stars, key is the star ID,
+    unordered_map<string, Star*> chart; //map of stars, key is the star ID,
 public:
     void addEdge(Star* star);
     string addEdgeRecursive(Star* star, Star* next);
