@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/Graph.h
+string
+-
+cmath
+-
+utility
+-
+vector
+-
+unordered_map
+-
+queue
+-
+iomanip
+-
+iostream
+-
+chrono
+-
+
+C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/main.cpp
+iostream
+-
+Graph.h
+C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/Graph.h
+fstream
+-
+string
+-
+sstream
+-
+GL/freeglut.h
+-
+
