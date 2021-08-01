@@ -9,7 +9,9 @@ using namespace std;
 void graph::chartInfo() {
     cout <<chart.size()+2 << endl;
     for(auto iter = chart.begin(); iter != chart.end(); iter++){
-        iter->second->printStar();
+        if(!iter->second->name.empty()) {
+            iter->second->printStar();
+        }
     }
 }
 

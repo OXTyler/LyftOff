@@ -292,6 +292,7 @@ int inputOutput(){
 
         if(choice == 1){
             // function call to print all named stars
+            starGraph.chartInfo();
             return 0;
         }
 
