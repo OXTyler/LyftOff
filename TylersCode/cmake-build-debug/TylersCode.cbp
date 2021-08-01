@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug"/>
+				<Option working_dir="C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TylersCode">
-				<Option output="C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/TylersCode.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug"/>
+				<Option output="C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/bin/TylersCode.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -32,15 +32,15 @@
 					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 TylersCode"/>
-					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 TylersCode"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TylersCode/fast">
-				<Option output="C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/TylersCode.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug"/>
+				<Option output="C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/bin/TylersCode.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,43 +53,43 @@
 					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 TylersCode/fast"/>
-					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 TylersCode/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug"/>
+				<Option working_dir="C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug"/>
+				<Option working_dir="C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/Graph.cpp">
+		<Unit filename="C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/Graph.cpp">
 			<Option target="TylersCode"/>
 		</Unit>
-		<Unit filename="C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/Graph.h">
+		<Unit filename="C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/Graph.h">
 			<Option target="TylersCode"/>
 		</Unit>
-		<Unit filename="C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/main.cpp">
+		<Unit filename="C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/main.cpp">
 			<Option target="TylersCode"/>
 		</Unit>
-		<Unit filename="C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/CMakeLists.txt">
+		<Unit filename="C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

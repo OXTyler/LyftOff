@@ -1,3 +1,3 @@
 "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\TylersCode.dir/objects.a
 C:\mingw\mingw32\bin\ar.exe cr CMakeFiles\TylersCode.dir/objects.a @CMakeFiles\TylersCode.dir\objects1.rsp
-C:\mingw\mingw32\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\TylersCode.dir/objects.a -Wl,--no-whole-archive -o TylersCode.exe -Wl,--out-implib,libTylersCode.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\TylersCode.dir\linklibs.rsp
+C:\mingw\mingw32\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\TylersCode.dir/objects.a -Wl,--no-whole-archive -o bin\TylersCode.exe -Wl,--out-implib,libTylersCode.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\TylersCode.dir\linklibs.rsp

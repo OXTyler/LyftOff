@@ -61,10 +61,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode"
+CMAKE_SOURCE_DIR = C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/TylersCode.dir/depend.make
@@ -77,29 +77,29 @@ include CMakeFiles/TylersCode.dir/flags.make
 
 CMakeFiles/TylersCode.dir/main.cpp.obj: CMakeFiles/TylersCode.dir/flags.make
 CMakeFiles/TylersCode.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TylersCode.dir/main.cpp.obj"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TylersCode.dir\main.cpp.obj -c "C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TylersCode.dir/main.cpp.obj"
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TylersCode.dir\main.cpp.obj -c C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode\main.cpp
 
 CMakeFiles/TylersCode.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TylersCode.dir/main.cpp.i"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode\main.cpp" > CMakeFiles\TylersCode.dir\main.cpp.i
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode\main.cpp > CMakeFiles\TylersCode.dir\main.cpp.i
 
 CMakeFiles/TylersCode.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TylersCode.dir/main.cpp.s"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode\main.cpp" -o CMakeFiles\TylersCode.dir\main.cpp.s
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode\main.cpp -o CMakeFiles\TylersCode.dir\main.cpp.s
 
 CMakeFiles/TylersCode.dir/Graph.cpp.obj: CMakeFiles/TylersCode.dir/flags.make
 CMakeFiles/TylersCode.dir/Graph.cpp.obj: ../Graph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TylersCode.dir/Graph.cpp.obj"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TylersCode.dir\Graph.cpp.obj -c "C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode\Graph.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TylersCode.dir/Graph.cpp.obj"
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TylersCode.dir\Graph.cpp.obj -c C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode\Graph.cpp
 
 CMakeFiles/TylersCode.dir/Graph.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TylersCode.dir/Graph.cpp.i"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode\Graph.cpp" > CMakeFiles\TylersCode.dir\Graph.cpp.i
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode\Graph.cpp > CMakeFiles\TylersCode.dir\Graph.cpp.i
 
 CMakeFiles/TylersCode.dir/Graph.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TylersCode.dir/Graph.cpp.s"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode\Graph.cpp" -o CMakeFiles\TylersCode.dir\Graph.cpp.s
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode\Graph.cpp -o CMakeFiles\TylersCode.dir\Graph.cpp.s
 
 # Object files for target TylersCode
 TylersCode_OBJECTS = \
@@ -109,17 +109,17 @@ TylersCode_OBJECTS = \
 # External object files for target TylersCode
 TylersCode_EXTERNAL_OBJECTS =
 
-TylersCode.exe: CMakeFiles/TylersCode.dir/main.cpp.obj
-TylersCode.exe: CMakeFiles/TylersCode.dir/Graph.cpp.obj
-TylersCode.exe: CMakeFiles/TylersCode.dir/build.make
-TylersCode.exe: CMakeFiles/TylersCode.dir/linklibs.rsp
-TylersCode.exe: CMakeFiles/TylersCode.dir/objects1.rsp
-TylersCode.exe: CMakeFiles/TylersCode.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable TylersCode.exe"
+bin/TylersCode.exe: CMakeFiles/TylersCode.dir/main.cpp.obj
+bin/TylersCode.exe: CMakeFiles/TylersCode.dir/Graph.cpp.obj
+bin/TylersCode.exe: CMakeFiles/TylersCode.dir/build.make
+bin/TylersCode.exe: CMakeFiles/TylersCode.dir/linklibs.rsp
+bin/TylersCode.exe: CMakeFiles/TylersCode.dir/objects1.rsp
+bin/TylersCode.exe: CMakeFiles/TylersCode.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin\TylersCode.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\TylersCode.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/TylersCode.dir/build: TylersCode.exe
+CMakeFiles/TylersCode.dir/build: bin/TylersCode.exe
 
 .PHONY : CMakeFiles/TylersCode.dir/build
 
@@ -128,6 +128,6 @@ CMakeFiles/TylersCode.dir/clean:
 .PHONY : CMakeFiles/TylersCode.dir/clean
 
 CMakeFiles/TylersCode.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode" "C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode" "C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode\cmake-build-debug" "C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode\cmake-build-debug" "C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode\cmake-build-debug\CMakeFiles\TylersCode.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode\cmake-build-debug C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode\cmake-build-debug C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode\cmake-build-debug\CMakeFiles\TylersCode.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/TylersCode.dir/depend
 

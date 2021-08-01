@@ -1,6 +1,3 @@
-//
-// Header file for star chart, should include star object and graph
-// Will probably have 90% of the project
 #include <string>
 #include <cmath>
 #include <utility>
@@ -66,14 +63,13 @@ struct Star{
 };
 
 class graph{
-private:
-    unordered_map<string, Star*> chart; //map of stars, key is the star ID,
+
 public:
+    unordered_map<string, Star*> chart; //map of stars, key is the star ID,
     void addEdge(Star* star);
     string addEdgeRecursive(Star* star, Star* next);
     vector<Star*> Dijkstra(string srcID, string destination, float& dist);
-    vector<Star> BFS();
     void chartInfo();
-    vector<Star*> BFS(const graph& g, string sourceID);
+    vector<Star*> BFS(string sourceID, string destID);
 };
 

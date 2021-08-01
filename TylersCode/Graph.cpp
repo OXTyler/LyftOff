@@ -4,13 +4,14 @@
 #include "Graph.h"
 using namespace std;
 
+
+//outputs all info of all stars
 void graph::chartInfo() {
     cout <<chart.size()+2 << endl;
     for(auto iter = chart.begin(); iter != chart.end(); iter++){
         iter->second->printStar();
     }
 }
-
 
 //adds star to graph by linking it to whatever is closest, if graph empty, just adds star
 void graph::addEdge(Star* star){
@@ -19,28 +20,39 @@ void graph::addEdge(Star* star){
         chart[star->id] = star;
     }
     else {
-
+        //start of trying to find closest star to connect new star
+        //does so in a greedy fashion
         float minDist = star->getDist(chart["0"]);
         float tempDist;
         nearestID = chart["0"]->id;
         bool cont = false;
+        //checks all neighbors of sun (node 0) to see if one is
+        //closer to new star than sun
         for (int i = 0; i < chart["0"]->neighbors.size(); i++) {
+
                 tempDist = star->getDist(chart["0"]->neighbors[i].first);
+                //if a neighbor is closer than previous closest, will mark
                 if (tempDist < minDist) {
                     minDist = tempDist;
                     cont = true;
                     nearestID = chart["0"]->neighbors[i].first->id;
                 }
         }
+        //if continue is needed, will recursively continue from the
+        //closest neighbor of the parent (in this function sun)
         if(cont){
             nearestID = addEdgeRecursive(star, chart[nearestID]);
         }
+
+        //once that is done, connects new star to (greedy) closest star
         chart[star->id] = star;
         star->neighbors.emplace_back(chart[nearestID], star->getDist(chart[nearestID]));
         chart[nearestID]->neighbors.emplace_back(star, chart[nearestID]->getDist(star));
     }
 }
 
+//recursive function used to find the closest star to connect new star
+//takes a greedy approach, so not necessarily the actual closest
 string graph::addEdgeRecursive(Star* star, Star* next){
     bool cont = false;
     float tempDist;
@@ -60,6 +72,7 @@ string graph::addEdgeRecursive(Star* star, Star* next){
     return nearestID;
 }
 
+//uses dijkstras algo to find shortest path from one star to another (given a greedily created graph)
 vector<Star*> graph::Dijkstra(string srcID, string destinationID, float& distance){
 
     //priority queue of nodes (stars) implemented as a min heap
@@ -112,7 +125,7 @@ vector<Star*> graph::Dijkstra(string srcID, string destinationID, float& distanc
 
     }
 
-    //path from destinantion to source (its backwards)
+    //path from destination to source (its backwards)
     vector<Star*> path;
 
     //start with destination
@@ -145,33 +158,34 @@ vector<Star*> graph::Dijkstra(string srcID, string destinationID, float& distanc
     return path;
 
 }
-vector<Star*> graph::BFS(const graph &g, string sourceID) {
-    set<string> identified;
+
+//modified bfs, essentially works as an unweighted dijkstra's algo
+//will be similar to Dijkstra due to greedy approach of graph construction
+vector<Star*> graph::BFS(string sourceID, string destID) {
     vector<Star*> path;
-    identified.insert(sourceID);
-    queue<string> q;
-    q.push(sourceID);
-    while(q.empty() == false){
-        string temp = q.front();
-        Star* tempStar = chart[temp];
-        path.push_back(tempStar);
-        q.pop();
-        vector<pair<Star*,float>> neighbors = chart[temp]->neighbors;
-        sort(stoi(neighbors.begin()->first->id) ,stoi(neighbors.begin()->first->id) + stoi(neighbors.end()->first->id));
-        for(int i : neighbors.begin()->first->id){
-            if(identified.count(to_string(i)) == 0){
-                identified.insert(to_string(i));
-                q.push(to_string(i));
+    vector<string> parents(chart.size()+2, "");
+    vector<bool> visited(chart.size()+2, false);
+    queue<Star*> nodes;
+    Star* src = chart[sourceID];
+    nodes.push(src);
+    visited[stoi(sourceID)] = true;
+    Star* temp;
+    while(!nodes.empty()){
+        temp = nodes.front();
+        nodes.pop();
+        for(auto iter = chart[temp->id]->neighbors.begin(); iter != chart[temp->id]->neighbors.end(); iter++){
+            if(!visited[stoi(iter->first->id)]){
+                nodes.push(iter->first);
+                visited[stoi(iter->first->id)] = true;
+                parents[stoi(iter->first->id)] = temp->id;
             }
-
-
         }
-
-
-
     }
-
-
+    Star* tempNode = chart[destID];
+    while(parents[stoi(tempNode->id)] != ""){
+        path.push_back(tempNode);
+        tempNode = chart[parents[stoi(tempNode->id)]];
+    }
+    path.push_back(tempNode);
     return path;
-
 }

@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode"
+"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug
+-- Build files have been written to: C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug

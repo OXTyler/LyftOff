@@ -62,10 +62,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode"
+CMAKE_SOURCE_DIR = C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -92,14 +92,14 @@ clean: CMakeFiles/TylersCode.dir/clean
 CMakeFiles/TylersCode.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TylersCode.dir\build.make CMakeFiles/TylersCode.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TylersCode.dir\build.make CMakeFiles/TylersCode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode\cmake-build-debug\CMakeFiles" --progress-num=1,2,3 "Built target TylersCode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target TylersCode"
 .PHONY : CMakeFiles/TylersCode.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TylersCode.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode\cmake-build-debug\CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/TylersCode.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\lackt\Documents\UF\Summer 2021\Data Structures COP 3530\Project 3\LyftOff\TylersCode\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lackt\Documents\UF\Summer2021\DataStructuresCOP3530\Project3\LyftOff\TylersCode\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/TylersCode.dir/rule
 
 # Convenience name for target.

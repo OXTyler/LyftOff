@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode
+# Install script for directory: C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/lackt/Documents/UF/Summer 2021/Data Structures COP 3530/Project 3/LyftOff/TylersCode/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/lackt/Documents/UF/Summer2021/DataStructuresCOP3530/Project3/LyftOff/TylersCode/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
